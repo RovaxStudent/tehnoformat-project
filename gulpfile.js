@@ -16,6 +16,7 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("src/assets/sass/*sass", ['sass']);
     gulp.watch("src/assets/sass/sections/*sass", ['sass']);
     gulp.watch("src/assets/sass/utils/*sass", ['sass']);
+    gulp.watch("src/assets/sass/icons/*sass", ['sass']);
     gulp.watch("src/assets/*.html").on('change', bs.reload);
 });
 
