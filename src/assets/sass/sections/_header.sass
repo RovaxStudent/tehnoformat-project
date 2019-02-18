@@ -1,0 +1,42 @@
+.header
+	padding: 20px 0
+	a
+		color: $text-color-darkblue
+	&-nav
+		display: flex
+		justify-content: space-between
+		font-size: 16px
+		font-weight: 500
+		color: $text-color-darkblue
+		&__item
+			&::before
+				content: '\2022'
+				display: inline-block
+				vertical-align: text-top
+				margin-right: 5px
+				font-size: 10px
+				line-height: 20px
+				color: #007dc4
+
+	&-contacts
+		display: flex
+		align-items: center
+		&__phone
+			position: relative
+			margin-right: 15px
+			width: 46px
+			height: 46px
+			background-color: #ebf9fa
+			border-radius: 50%
+		&__number
+			font-size: 20px
+			font-weight: 700
+
+.phone-icon
+	position: absolute
+	left: 50%
+	top: 50%
+	margin-left: -13px
+	margin-top: -13px
+	width: 26px
+	height: 26px
